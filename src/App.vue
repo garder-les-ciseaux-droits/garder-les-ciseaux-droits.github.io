@@ -52,7 +52,7 @@ export default {
       },
       searchMovie() {
         axios
-        .get(`http://www.omdbapi.com/?t=${this.inputText}&apikey=2b1b57fb`)
+        .get(`https://www.omdbapi.com/?t=${this.inputText}&apikey=2b1b57fb`)
         .then(response => this.moviePlot = response.data.Plot)
         .catch(error => {
             console.log(error);
