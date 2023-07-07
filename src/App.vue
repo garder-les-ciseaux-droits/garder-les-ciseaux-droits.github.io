@@ -40,7 +40,7 @@ export default {
       inputChangeHandler(event) {
         this.inputText = event.target.value;
         axios
-        .get(`http://www.omdbapi.com/?t=${this.inputText}&apikey=2b1b57fb`)
+        .get(`https://www.omdbapi.com/?t=${this.inputText}&apikey=2b1b57fb`)
         .then(response => this.apiData = response.data.Title)
         .catch(error => {
             console.log(error);
